@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+
+members = [
+]
+
+exclude = [
+]
+
+[workspace.package]
+authors = ["Kiran Kumar Roy", "Prem Prakash Saha"]
+
+[workspace.dependencies]
+tokio = { version = "1.21.0", features = ["full"] }
+
+[profile.release]
+debug = true
+overflow-checks = true
+
+[profile.bench]
+debug = true
+
